@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="syless.css">
+</head>
+<body>
+    <form>
+        <p class="mandatory">*Mandatory to fill</p>
+
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" name="firstname" required> <span class="star">*</span><br>
+
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" required> <span class="star">*</span><br>
+
+        <label for="birthday">Birthday:</label>
+        <select id="day" name="day" required>
+            <option value="">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more days as needed -->
+        </select>
+        <select id="month" name="month" required>
+            <option value="">Month</option>
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+            <!-- Add more months as needed -->
+        </select>
+        <select id="year" name="year" required>
+            <option value="">Year</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <!-- Add more years as needed -->
+        </select>
+        <span class="star">*</span><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required> <span class="star">*</span><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required> <span class="star">*</span><br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> <span class="star">*</span><br>
+
+        <label for="repassword">Re-password:</label>
+        <input type="password" id="repassword" name="repassword" required> <span class="star">*</span><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms & conditions.</label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
